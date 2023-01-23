@@ -1,0 +1,21 @@
+*{
+    /* padding: 10%; */
+    margin: 0.1%;
+    padding: 0.1%;
+    
+}
+
+header{
+    background-color: forestgreen;
+    padding: 50px;
+    font-size: 200%;
+
+}
+
+nav,footer{
+    position: sticky; 
+    background-color: darkgoldenrod;
+    font-size: medium;
+    align-items: center;
+    padding: 5px;
+}
