@@ -1,21 +1,54 @@
 *{
-    /* padding: 10%; */
-    margin: 0.1%;
-    padding: 0.1%;
-    
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+} 
+
+body{
+    margin: auto;
+    width: 100%;
+    max-width: 1400px;
+    min-height: 100vh;
+    display: block;
+    background: black;
+    font-family: sans-serif;
 }
 
-header{
-    background-color: forestgreen;
-    padding: 50px;
-    font-size: 200%;
-
-}
-
-nav,footer{
-    position: sticky; 
-    background-color: darkgoldenrod;
-    font-size: medium;
+.navbar{
+    width: 100%;
+    position: sticky;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    padding: 5px;
+    background-color: aqua;
+}
+
+.link-group{
+    list-style:none;
+    display: flex ;
+}
+
+.link a{
+    margin: 0 20px;
+    padding: 10px 30px;
+    color: palevioletred;
+    opacity: 0.5;
+    text-decoration:none;
+    text-transform:capitalize;
+    line-height: 80px;
+    transition: 0.5s;
+    font-size: 20px;
+}
+
+.link a:hover, .link.initial a{
+    opacity: 1;
+}
+
+.contact-section{
+    position: relative;
+}
+
+.contact-form input, .contact-form textarea{
+    background: rgba(red, green, blue, alpha);
+    color: aliceblue;
 }
