@@ -4,41 +4,206 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio</title>
+    <title> Personal Portfolio </title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- The button for scrolling up to the home (Hidden initially) -->
+    <div class="scroll-up-btn">
+        <i class="fas fa-angle-up"></i>
+    </div>
 
-    <!-- navbar -->
+    <!-- The navbar -->
     <nav class="navbar">
-        <ul class="link-group">
-            <li class="link initial"><a href ="#">Home</a></li>
-            <li class="link"><a href ="#">About</a></li>
-            <li class="link"><a href ="#">Skills</a></li>
-            <li class="link"><a href ="#">Projects</a></li>
-            <li class="link"><a href ="#">Contact</a></li>
-        </ul>
+        <div class="max-width">
+            <div class="logo"><a href="#">Vivek's Portfolio.</a></div>
+            <ul class="menu">
+                <li><a href="#home" class="menu-btn">Home</a></li>
+                <li><a href="#about" class="menu-btn">About</a></li>
+                <li><a href="#skills" class="menu-btn">Skills</a></li>
+                <li><a href="#project" class="menu-btn">Projects</a></li>
+                <li><a href="#contact" class="menu-btn">Contact</a></li>
+            </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
     </nav>
 
-    <!-- Home section -->
-
-    <section class="home-section">
-
+    <!-- home section start -->
+    <section class="home" id="home">
+        <div class="max-width">
+            <div class="home-content">
+                <div class="text-1">Hello, my name is</div>
+                <div class="text-2">Vivek Sati</div>
+                <div class="text-3">And I'm a <span class="typing"></span></div>
+                <a href="https://www.linkedin.com/in/vivek-sati/">Linkedin Profile</a>
+            </div>
+        </div>
     </section>
 
-    <!-- contact section -->
-    <section class="contact-section">
-        <form class="contact-form">
-            <input type="text" name="name" id="name" autocomplete="off" placeholder="name">
-            <input type="text" name="email" id="email" autocomplete="off" placeholder="email">
-            <textarea name="msg" id="msg" placeholder="message" autocomplete="off"></textarea>
-            <button type="submit" class="submit-btn">contact</button>
-        </form>
+    <!-- about section start -->
+    <section class="about" id="about">
+        <div class="max-width">
+            <h2 class="title">About me</h2>
+            <div class="about-content">
+                <div class="column left">
+                    <img src="/PORTFOLIO/Images/profile.jpg" alt="Loading image">
+                </div>
+                <div class="column right">
+                    <div class="text">I'm Vivek and I'm<span class="typing-2"></span></div>
+                    <p>I'm pursuing Computer Science Engineering. I'm a quick and passionate learner. I am always passionate about understanding the core concepts behind different popular Technological Fields. I think no matter how hard the past is, you can always begin again... and I believe every day is a chance to begin again. I love whatever I do...and also I do whatever I love...</p>
+                    <a href="https://www.linkedin.com/in/vivek-sati/">View CV</a>
+                    <a href="https://www.linkedin.com/in/vivek-sati/">Download Resume</a>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <script src="app.js"></script>
+    <!-- projects section start -->
+    <section class="services" id="project">
+        <div class="max-width">
+            <h2 class="title">My Projects</h2>
+            <div class="serv-content">
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-paint-brush"></i>
+                        <div class="text"><a href="https://github.com/Viveksati5143/Credit-Card-Fraud-Detection"> Credit Card Fraud Detection </a></div>
+                        <p>It is used to detect fraud in credit cards</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-chart-line"></i>
+                        <div class="text"><a href="https://github.com/Viveksati5143/Sentimental-Analysis"> Sentimental Analysis</a></div>
+                        <p>It is a NLP and Information Extraction task that aims to obtain writer’s feelings expressed in positive or negative comments, questions and requests, by analysing a large numbers of documents.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-code"></i>
+                        <div class="text"><a href="https://github.com/Viveksati5143/OIBGRIP1/tree/main/TEMPERATURE%20CONVERTER%20WEBSITE">Temperature Convertor Website</a></div>
+                        <p> It converts Temperature in degree Celsius(C) to Fahrenheit(F) and vise versa </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- skills section start -->
+    <section class="skills" id="skills">
+        <div class="max-width">
+            <h2 class="title">My Skills</h2>
+            <div class="skills-content">
+                <div class="column left">
+                    <div class="text">My creative skills & experiences.</div>
+                    <p>As we all know that under engineering, technical skills always provide unique gratitude and passion for any technical guy. So these technical skills of the engineer always help me, in the same way at all the time. Being a fresher and trainee I don't say that I don't have any experience at all, I am working in technical courses since my B.tech started and have gained so much experience in the field of Web Development, Data Analysis, Team leadership, Management, Java, C, Python Programming, MySQL, Machine Learning and many more...<br> I'm a quick and a passionate learner.</p>
+                    <a href="https://www.linkedin.com/in/vivek-sati/"> Read more.. </a>
+                </div>
+               
+                <div class="column right">
+                    <div class="bars">
+                        <div class="info">
+                            <span>Problem Solving</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="line ps"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>Java</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="line C"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>Python</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="line py"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>Data Structures</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="line ds"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>MySQL</span>
+                            <span>89%</span>
+                        </div>
+                        <div class="line f"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>Frontend</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="line b"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    
+    <!-- contact section start -->
+    <section class="contact" id="contact">
+        <div class="max-width">
+            <h2 class="title">Contact Me</h2>
+            <div class="contact-content">
+                <div class="column left">
+                    <div class="text">Get in Touch:</div>
+                    <p>I love connecting with different people from around the world, feel free to reach out. 😊 💜</p>
+                    <div class="icons">
+                        <div class="row">
+                            <i class="fas fa-user"></i>
+                            <div class="info">
+                                <div class="head">Name</div>
+                                <div class="sub-title"> Vivek Sati </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="info">
+                                <div class="head">Address</div>
+                                <div class="sub-title"> Dehradun, India </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-envelope"></i>
+                            <div class="info">
+                                <div class="head">Email</div>
+                                <div class="sub-title">viveksati2002@gmail.com</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column right">
+                    <div class="text"> Twitter </div>
+                    <form action="#">
+                        <div class="button">                        
+                    <button type="submit"><a href="https://twitter.com/Vivek__twts" >Send message</a></button>
+                    </div>
+                </form>
+                   <form action="#">
+                    <div class="text">Connect me on Linkedin</div>                    
+                    <div class="button">
+                        <button type="submit"><a href="https://www.linkedin.com/in/vivek-sati/" >Connect</button>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section> 
+
+    <!-- footer section start -->
+    <footer>
+        <span>Created By <a href="https://www.linkedin.com/in/vivek-sati/">Vivek Sati</a> with💖| <span class="far fa-copyright"></span> 2023 All rights reserved.</span>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
