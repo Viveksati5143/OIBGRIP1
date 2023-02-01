@@ -22,15 +22,15 @@ $(document).ready(function(){
         $('html').css("scrollBehavior", "auto");
     });
 
-    $('.navbar .menu li a').click(function(){
-        // applying again smooth scroll on menu items click
+    $('.navbar .main-menu li a').click(function(){
+        // applying again smooth scroll on main-menu items click
         $('html').css("scrollBehavior", "smooth");
     });
 
-    // toggle menu/navbar script
-    $('.menu-btn').click(function(){
-        $('.navbar .menu').toggleClass("active");
-        $('.menu-btn i').toggleClass("active");
+    // toggle main-menu/navbar script
+    $('.main-menu-btn').click(function(){
+        $('.navbar .main-menu').toggleClass("active");
+        $('.main-menu-btn i').toggleClass("active");
     });
 
     // typing text animation script
